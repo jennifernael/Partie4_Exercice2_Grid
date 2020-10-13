@@ -1,17 +1,12 @@
 .wrapper {
     display: grid;
-    grid-template-columns: 180px 180px 180px 180px;
-    grid-template-rows: 50px 20px 40px;
-    column-gap: 15px;
-    row-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 60px 30px 45px;
+    grid-gap: 15px;
     color: rgb(252, 252, 249);
-    width: 100%;
   }
   .one {
-    align-self: stretch;
     background-color: lightcoral;
-    padding-top: 10px;
-    padding-left: 5px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -19,20 +14,14 @@
 
   }
   .two { 
-    align-self: stretch;
     background-color: lightseagreen;
-    padding-top: 10px;
-    padding-left: 5px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
   }
   .three {
-    align-self: stretch;
     background-color: maroon;
-    padding-top: 10px;
-    padding-left: 5px;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -40,10 +29,7 @@
   }
 
   .four {
-    align-self: stretch;
     background-color: midnightblue;
-    padding-top: 10px;
-    padding-left: 5px;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -51,28 +37,21 @@
 
   }
   .five {
-    align-self: stretch;
     background-color: olive;
-    padding-left: 5px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
   }
   .six {
-    align-self: stretch;
     background-color: orchid;
-    padding-left: 5px;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
   }
 .seven {
-    align-self: stretch;
     background-color: purple;
-    padding-top: 10px;
-    padding-left: 5px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
@@ -80,36 +59,27 @@
 
 }
 .eight {
-    align-self: stretch;
     background-color: steelblue;
-    padding-top: 10px;
-    padding-left: 5px;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
 }
 .nine {
-    align-self: stretch;
     background-color: teal;
-    padding-top: 10px;
-    padding-left: 5px;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 4;
 }
 
-@media screen and (max-width: 680px) {
-  .wrapper {
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 80px 30px 60px;
-  }
-}
-
-@media screen and (min-width: 681px) and (max-width: 780px) {
-  .wrapper {
-    grid-template-columns: 140px 140px 140px 140px;
-    grid-template-rows: 65px 25px 45px;
-  }
+.wrapper div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  box-sizing: border-box;
+  color: floralwhite;
+  font-weight: bold;
+  font-size: 1.5em;
 }
